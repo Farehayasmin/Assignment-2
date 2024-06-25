@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiniteTraverse</title>
+    <style>
+        .nav {
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+        .nav-title {
+            position: absolute;
+            Width: 273.63px;
+            Height: 48px;
+            Top: 50px;
+            Left: 135px;
+            font-size: 30px;
+        }
+
+        .icon {
+            position: absolute;
+            width: 48px;
+            height: 56.008px;
+            flex-shrink: 0;
+            left: 70px;
+            top: 40px;
+        }
+
+        nav a {
+
+            text-decoration: none;
+            color: black;
+            justify-content: space-between;
+
+
+
+
+        }
+
+
+        .banner-title {
+            color: white;
+
+            font-family: Mulish;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            padding: 40px 150px;
+            text-align: center;
+
+        }
+
+        .form-container {
+
+            background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
+            border-radius: 16px;
+
+
+            position: absolute;
+            width: 900px;
+            height: 400px;
+            left: 70px;
+            right: -300px;
+            top: 100px;
+            bottom: -146px;
+            text-align: center;
+
+
+        }
+
+        .container {
+
+            position: relative;
+            width: 600px;
+            height: 40px;
+            left: 150px;
+
+            display: flex;
+            gap: 16px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.3);
+
+
+
+        }
+
+        .fa-solid fa-magnifying-glass {
+            color: #FF5400
+        }
+
+
+        .second-container {
+            background: url(Images/Rectangle\ 4.png);
+            
+            border-radius: 16px;
+            
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            left: 570px;
+            right: 135px;
+            top: 550px;
+            bottom: 5644px;
+        }
+
+        .paragraph-section {
+            position: relative;
+            
+            left: 70px;
+            right: 620px;
+            top: 500px;
+            bottom: 5728px;
+            font-size: 14px;
+            color: rgba(19, 19, 24, 0.7);
+            text-align: left;
+
+        }
+
+        .second-btn {
+            /* /* Rectangle 3 */
+            position: absolute;
+            width: 174px;
+            height: 52px;
+            left: 135px;
+            right: -135px;
+            top: 780px;
+            bottom: -1244px;
+            border-radius: 8px;
+            background-color: #FF5400;
+            text-align: center;
+            font-size: 20px;
+            line-height: 25px;
+
+        }
+
+        /* third-section  related style */
+        /* Choose Your Destination */
+        .third-section {
+
+
+            position: absolute;
+            width: 478px;
+            height: 50px;
+            left: 260px;
+            right: -315px;
+            top: 900px;
+            bottom: -1320px;
+            text-align: center;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            background: #FFF;
+            padding: 10px;
+        }
+
+        .first-line {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 24px;
+
+        }
+
+        .second-line {
+            display: grid;
+            grid-template-columns: repeat(3, 200px, auto, 200px);
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .row {
+            height: 200px;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 5px;
+
+        }
+
+        .collage-container {
+            margin-top: 750px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        .name-container-clg{
+            display: flex;
+            position: absolute;
+            gap: 300px;
+            top: 1120px;
+            left: 270px;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+        }
+        .name-container-clg-2{
+            display: flex;
+            position: absolute;
+            text-align: center;
+            gap: 150px;
+            top: 1300px;
+            left: 150px;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+
+        }
+        .name-container-clg-3{
+            display: flex;
+            position: absolute;
+            text-align: center;
+            gap: 230px;
+            top: 1520px;
+            left: 230px;
+            font-size: 25px;
+            color: rgb(255, 255, 255);}
+
+        /* fourth-section-related style */
+        .fourth-title {
+            /* Why Choose Us */
+            position: absolute;
+            width: 307px;
+            height: 50px;
+            left: 400px;
+            right: -230px;
+            top: 1700px;
+            bottom: -2528px;
+            font-size: 20px;
+            text-align: center;
+
+        }
+        
+
+        .fourth-description {
+            font-size: 15px;
+            text-align: center;
+            top: 1740px;
+            left: 300px;
+            position: absolute;
+        }
+
+        .box-container {
+            /* Rectangle 7 */
+            position: absolute;
+            width: 420px;
+            height: 250px;
+            left: 70px;
+            top: 1850px;
+            box-sizing: border-box;
+            border: 1px solid rgba(251, 181, 99, 0.2);
+            border-radius: 16px;
+
+            background: rgba(251, 181, 99, 0.05);
+
+        }
+
+        .box-container>box-title {
+            position: absolute;
+            top: 70px;
+            text-align: center;
+
+        }
+
+        .box-container>des {
+            position: absolute;
+
+        }
+
+        .box-container-2 {
+            position: absolute;
+
+            width: 420px;
+            height: 250px;
+            top: 1850px;
+            left: 550px;
+            box-sizing: border-box;
+            border: 1px solid rgba(41, 206, 246, 0.2);
+            border-radius: 16px;
+
+            background: rgba(41, 206, 246, 0.05);
+
+        }
+
+        .box-container-3 {
+            position: absolute;
+            width: 420px;
+            height: 250px;
+            left: 300px;
+            top: 2120px;
+
+
+            box-sizing: border-box;
+            border: 1px solid rgba(233, 68, 68, 0.2);
+            border-radius: 16px;
+
+            background: rgba(233, 68, 68, 0.05);
+
+        }
+
+        .deals-and-discount {
+            position: absolute;
+            left: 290px;
+            top: 2400px;
+            text-align: center;
+        }
+
+        /* .box-container-3>deals-des{
+            font-size: 15px;
+        } */
+        .group-39-img {
+            /* Rectangle 12 */
+            position: absolute;
+            width: 900px;
+            height: 400px;
+            left: 70px;
+
+            top: 2490px;
+
+            border-radius: 16px;
+        }
+
+        .box-container-grp39 {
+            box-sizing: border-box;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 16px;
+
+            backdrop-filter: blur(5px);
+            background: rgba(255, 255, 255, 0.8);
+            position: absolute;
+
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            left: 510px;
+            top: 2545px;
+
+        }
+
+        .price {
+            color: rgb(255, 84, 0);
+            font-family: Mulish;
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 25px;
+            letter-spacing: 0%;
+            text-align: left;
+
+
+        }
+
+        .group-40-img {
+            position: absolute;
+            width: 900px;
+            height: 400px;
+            left: 70px;
+
+            top: 2920px;
+
+        }
+
+        .box-container-grp40 {
+            box-sizing: border-box;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 16px;
+
+            backdrop-filter: blur(5px);
+            background: rgba(255, 255, 255, 0.8);
+            position: absolute;
+
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            left: 150px;
+            top: 2970px;
+
+        }
+
+        .grp-39-img2 {
+            position: absolute;
+            height: 400px;
+            width: 900px;
+            top: 3350px;
+            left: 70px;
+        }
+
+        .box-container-grp39-img2 {
+            box-sizing: border-box;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 16px;
+
+            backdrop-filter: blur(5px);
+            background: rgba(255, 255, 255, 0.8);
+            position: absolute;
+
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            left: 500px;
+            top: 3400px;
+
+        }
+
+        .see-all-package-btn {
+            position: absolute;
+            width: 174px;
+            height: 52px;
+            top: 3780px;
+            text-align: center;
+            left: 450px;
+            color: rgb(255, 255, 255);
+            font-family: Mulish;
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 25px;
+            border-radius: 8px;
+            background-color: #FF5400;
+
+        }
+
+        .simple-perfect-place-to-lost {
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            top: 3850px;
+            left: 70px;
+
+
+        }
+
+        .see-more-btn-container {
+            position: absolute;
+            width: 174px;
+            height: 52px;
+            top: 4050px;
+            text-align: center;
+            left: 70px;
+            color: rgb(255, 255, 255);
+            font-family: Mulish;
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 25px;
+            border-radius: 8px;
+            background-color: #FF5400;
+
+        }
+
+        .video-section {
+            position: absolute;
+            width: 450px;
+            height: 300px;
+            top: 3850px;
+            left: 512px;
+        }
+
+        .form-container-2 {
+
+            position: absolute;
+            width: 474px;
+            height: 422px;
+            left: 100px;
+            right: 831px;
+            top: 4180px;
+
+        }
+
+        .input-name {
+            width: 150px;
+            height: 50px;
+
+            border-radius: 8px;
+
+
+
+
+        }
+
+        .input-name-2 {
+            height: 50px;
+            width: 150px;
+            border-radius: 8px;
+        }
+
+        .subscribe {
+            border-radius: 8px;
+
+            background: rgb(255, 84, 0);
+            position: absolute;
+            width: 160px;
+            height: 50px;
+
+        }
+
+        .ractangle-8-img {
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            left: 470px;
+            top: 4190px;
+        }
+
+        .up-to-70-container {
+            border-radius: 16px;
+
+            background: rgb(255, 84, 0);
+            position: absolute;
+            height: 70px;
+            width: 220px;
+            left: 750px;
+            transform: rotate(-19.63deg);
+            top: 4390px;
+        }
+
+        .FIRST-L {
+            color: rgb(255, 255, 255);
+
+            font-size: 16px;
+
+
+
+            text-align: center;
+
+        }
+
+        .Second-L {
+            color: rgb(255, 255, 255);
+
+            font-size: 22px;
+            font-weight: 800;
+
+
+            text-align: center;
+
+        }
+
+
+        /* footer related style */
+        .footer-container {
+            position: absolute;
+            height: 350px;
+            width: 900px;
+            background: rgba(19, 19, 24, 0.05);
+            top: 4550px;
+            left: 70px;
+
+
+        }
+
+        .icon2 {
+
+            position: absolute;
+            width: 50px;
+            height: 46.67px;
+            left: 330px;
+            /* top: 4288px; */
+            transform: rotate(0.00deg);
+        }
+
+        .hero {
+            position: absolute;
+            height: 30px;
+            width: 100px;
+            left: 400px;
+
+
+        }
+
+        .Travel {
+            position: absolute;
+            height: 30px;
+            width: 100px;
+            left: 460px;
+            color: #FF5400;
+
+        }
+
+        .foter-des {
+            position: absolute;
+            width: 769px;
+            height: 52px;
+            left: 150px;
+            top: 4700px;
+
+            bottom: 285px;
+            text-align: center;
+        }
+
+        .socialIcons {
+            position: absolute;
+            top: 4750px;
+            left: 400px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .socialIcons a {
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        .socialIcons a i {
+            font-size: 2em;
+            color: black;
+            opacity: 0.9;
+
+        }
+
+        .footerBottom {
+            position: absolute;
+            width: 80%;
+            height: 20px;
+            left: 100px;
+
+            top: 4830px;
+
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="Images/Group 40071 (2).png" class="icon">
+
+
+        <h3 class="nav-title">Hero Travel</h3>
+        <div>
+            <a href="">Home</a>
+            <a href="">Package</a>
+            <a href="">Testimonial</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+        </div>
+    </nav>
+    <form class="form-container">
+
+        <h2 class="banner-title">Explore Your Travel</h2>
+        <p>Discover your next adventure with our curated travel guides, tips, and exclusive deals. </p>
+        <div class="container">
+            <input type=" Where go" placeholder="Where go">
+
+            <select name="When" id="When">
+                <option value="When">When</option>
+            </select>
+            <select name="Select Type" id="Select Type">
+                <option value="Select Type">Select Type</option>
+            </select>
+            <button><i class="fa-solid fa-magnifying-glass-2"></i> Find Now</button>
+
+        </div>
+
+    </form>
+    <div class="paragraph-section">
+        <h1>Our Popular Tours</h1>
+
+        <p>
+        Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit <br> massa. Sodales dictumst nec
+            nibh pellentesque.
+        </p>
+        <ul>
+            <li>
+                <p>Tempus euismod lacus mauris dignissim quis in ultrices. Magna <br> nullam odio neque diam. Sociis
+                    erat
+                    at .</p>
+            </li>
+
+            <li>
+                <p>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea <br> porta lacus. Lectus
+                    suspendisse
+                    nullam.</p>
+            </li>
+
+            <li>
+                <p> Accumsan eget et turpis praesent lorem egestas enim elit <br> bibendum. Risus at in.</p>
+            </li>
+        </ul>
+
+        <p>
+        Amet consectetur. Vulputate commodo felis molestie risus <br>
+            ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. <br> Habitant adipiscing risus
+            natoque aliquet. Id bibendum nunc senectus <br> semper tincidunt.
+        </p>
+
+    </div>
+    <div class="second-btn">
+        <button type="button" placeholder="Read More">Read More
+
+        </button>
+    </div>
+
+    <div class="second-container">
+
+    </div>
+    <div class="third-section">
+        <h1>Choose Your Destination</h1>
+        <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. <br> Sodales dictumst nec
+            nibh pellentesque.</p>
+    </div>
+    <section>
+        <!-- <h1>Picture Collage</h1> -->
+        <div class="collage-container">
+            <div class="row">
+                <img src="Images/Rectangle 5.png" alt="">
+
+                <img src="Images/Rectangle 8 (1).png" alt="">
+
+
+            </div>
+
+
+            <div class="row">
+                <img src="Images/Rectangle 6.png" alt="">
+                <img src="Images/Rectangle 7.png" alt="">
+                <img src="Images/Rectangle 9.png" alt="">
+            </div>
+            <div class="row">
+                <img src="Images/Rectangle 11.png" alt="">
+                <img src="Images/Rectangle 10.png" alt="">
+            </div>
+        </div>
+        </div>
+        <div class="name-container-clg">
+            <div>
+                <h3>Maldives</h3>
+            </div>
+            <div>
+                <h3>
+                    Indonesia
+                </h3>
+            </div>
+
+
+        </div>
+        <div class="name-container-clg-2">
+            <h3>
+                Srilanka
+            </h3>
+            <h3>
+                North America
+            </h3>
+            <h3>
+                Kashmir
+            </h3>
+        </div>
+        <div class="name-container-clg-3">
+            <h3>
+                Bangladesh
+            </h3>
+            <h3>
+                Bandarban
+            </h3>
+        </div>
+    </section>
+    <!-- why choose us section -->
+
+    <div class="fourth-title">
+        <h2> Why Choose Us</h2>
+    </div>
+    <div class="fourth-description">
+        <p> Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa <br>. Sodales dictumst nec
+            nibh
+            pellentesque.</p>
+    </div>
+
+
+    </div>
+
+    </div>
+
+
+
+
+    </div>
+    <div class="box-container">
+
+        <h3 class="box-title">Handpicked Hotels</h3>
+        <p class="des"></p>Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo
+        sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
+    </div>
+
+    <div class="box-container-2">
+        <h3 class="box-container-2-title">
+            World Class Service
+        </h3>
+        <p class="box-conteiner-2-des">
+            Amet consectetur. Vulputate commodo felis molestie risus ornare <br>nulla amet et. Libero commodo sagittis
+            dignissim adipiscing quis. <br> Habitant adipiscing risus natoque aliquet.
+        </p>
+
+    </div>
+    <div class="box-container-3">
+        <h3 class="box-container-3-title">
+            Best Price Guarantee
+        </h3>
+        <p class="des-3">
+            Amet consectetur. Vulputate commodo felis molestie risus ornare <br> nulla amet et. Libero commodo sagittis
+            dignissim adipiscing quis. <br> Habitant adipiscing risus natoque aliquet.
+        </p>
+
+
+    </div>
+    <div class="deals-and-discount">
+        <h2 class="deals-title">
+            Deals & Discounts
+        </h2>
+        <p class="deals-des">
+            Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. <br> Sodales dictumst
+            nec nibh pellentesque.
+        </p>
+    </div>
+    <div class="group-39-img">
+        <img src="Images/Group 39.png" alt="">
+    </div>
+
+    <div class="box-container-grp39">
+        <h3 class="grp39-title">
+            Tour To Satorini
+        </h3>
+        <p class="grp39-des">
+            Amet consectetur. Vulputate commodo felis <br>
+            molestie risus ornare nulla amet et. Libero commodo sagittis <br> dignissim adipiscing quis. Habitant
+            adipiscing.
+        </p>
+        <p class="price">Price: $1300-$1500</p>
+        <div class="btn-book-now">
+            <button>Book Now</button>
+        </div>
+
+
+    </div>
+
+    <div class="group-40-img">
+        <img src="Images/Group 40.png" alt="">
+    </div>
+    <div class="box-container-grp40">
+        <h3 class="grp40-title">
+            Tour To Satorini
+        </h3>
+        <p class="grp40-des">
+            Amet consectetur. Vulputate commodo felis <br>
+            molestie risus ornare nulla amet et. Libero commodo sagittis <br> dignissim adipiscing quis. Habitant
+            adipiscing.
+        </p>
+        <p class="price">Price: $1300-$1500</p>
+        <div class="btn-book-now">
+            <button>Book Now</button>
+        </div>
+    </div>
+
+    <div class="grp-39-img2">
+        <img src="Images/Group 39.png" alt="">
+    </div>
+    <div class="box-container-grp39-img2">
+        <h3 class="grp39-title">
+            Tour To Satorini
+        </h3>
+        <p class="grp39-des">
+            Amet consectetur. Vulputate commodo felis <br>
+            molestie risus ornare nulla amet et. Libero commodo sagittis <br> dignissim adipiscing quis. Habitant
+            adipiscing.
+        </p>
+        <p class="price">Price: $1300-$1500</p>
+        <div class="btn-book-now">
+            <button>Book Now</button>
+        </div>
+    </div>
+
+    <div class="see-all-package-btn">
+        <button type="button" placeholder="See All Package">
+            See All Package
+        </button>
+    </div>
+    <!-- A Simple Perfect Place To Get Lost section-->
+
+    <div class="simple-perfect-place-to-lost">
+        <h2 class="simple-perfect">
+            A Simple Perfect Place <br> To Get Lost section
+
+        </h2>
+        <div class="p-des">
+            <p>
+                Amet consectetur. Vulputate commodo felis molestie risus <br> ornare nulla <br> amet et. Libero commodo
+                sagittis dignissim adipiscing quis. <br>
+            </p>
+        </div>
+
+        <ul>
+            <li>
+                <h5>
+                    Adipiscing ornare pellentesque mauris volutpat tortor vitae <br> platea porta lacus. Lectus
+                    suspendisse nullam.
+
+                </h5>
+            </li>
+            <li>
+                <h5>
+                    Adipiscing ornare pellentesque mauris <br> volutpat tortor vitae platea porta lacus. Lectus <br>
+                    suspendisse nullam.
+
+                </h5>
+            </li>
+        </ul>
+
+    </div>
+    <div class="see-more-btn-container">
+        <button type="button" placeholder="See More">See More</button>
+    </div>
+
+    <div class="video-section">
+        <iframe width="450" height="300" src="https://www.youtube.com/embed/8yXReWYa5Ak?si=2pyMlo2FGw4fNGvN"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+    </div>
+
+
+
+
+
+
+    <div class="form-container-2">
+        <h2>
+            Newsletter
+        </h2>
+        <p>
+            Get your daily dose of travel news & tips. Sign <br> up today!
+        </p>
+        <form>
+            <div class="input-name">
+                <input type="text" placeholder="Enter your name">
+
+            </div>
+            <div class="input-name-2">
+                <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="subscribe">
+                <button> Subscribe</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="ractangle-8-img">
+        <img src="Images/Rectangle 8 (1).png" alt="">
+    </div>
+
+    <div class="up-to-70-container">
+        <div class="FIRST-L">
+            <p>Travel.com</p>
+        </div>
+
+        <div class="Second-L">
+            <h3>
+                Save up to 70%
+            </h3>
+        </div>
+
+    </div>
+    <div class="footer-container">
+        <div class="hero">
+            <h2>Hero</h2>
+        </div>
+        <div class="Travel">
+            <h2>Travel</h2>
+        </div>
+        <div class="icon2">
+            <img src="Images/Group 40071 (2).png" alt="">
+        </div>
+
+    </div>
+    <div class="foter-des">
+        <p>Travel broadens horizons, offering new perspectives and unforgettable experiences that enrich the soul.
+
+        </p>
+    </div>
+    <div class="socialIcons">
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+
+    </div>
+    <div class="footerBottom">
+        <p>
+            2017, All Rights Reserved.
+        </p>
+    </div>
+
+
+
+</body>
+
+</html>
